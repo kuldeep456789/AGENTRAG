@@ -1,0 +1,97 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - button "New chat" [ref=e6] [cursor=pointer]:
+        - img [ref=e7]
+        - text: New chat
+      - button "Collapse sidebar" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Enterprise RAG Ingestion
+        - button "Open menu for Enterprise RAG Ingestion" [ref=e14]:
+          - img [ref=e15]
+      - generic [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: Document Risk Analysis
+        - button "Open menu for Document Risk Analysis" [ref=e22]:
+          - img [ref=e23]
+    - generic [ref=e27]:
+      - button "Settings" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+        - text: Settings
+      - generic [ref=e32]:
+        - generic [ref=e33]: D
+        - generic [ref=e34]: demo
+        - img [ref=e35]
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: "!"
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: System
+            - generic [ref=e46]: /10:45 PM
+          - paragraph [ref=e48]: Aether Agent fabric active. Secure connection established.
+      - generic [ref=e50]:
+        - generic [ref=e51]: AI
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: RAG Agent
+            - generic [ref=e55]: /10:45 PM
+          - paragraph [ref=e57]: Hello! I am your AI assistant. How can I assist you with your knowledge workspace or vision analysis today?
+          - button "Copy" [ref=e59] [cursor=pointer]:
+            - img [ref=e60]
+            - text: Copy
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - textbox "Message ChatGPT..." [ref=e66]
+        - generic [ref=e67]:
+          - button "Attach File" [ref=e68] [cursor=pointer]:
+            - img [ref=e69]
+          - button [disabled] [ref=e71]:
+            - img [ref=e72]
+      - generic [ref=e74]: Responses include timestamp and total answer time. Verify important information.
+  - generic [ref=e76]:
+    - generic [ref=e77]:
+      - heading "Settings" [level=3] [ref=e78]
+      - button [ref=e79] [cursor=pointer]:
+        - img [ref=e80]
+    - generic [ref=e83]:
+      - generic [ref=e84]:
+        - generic [ref=e85]: Assistant
+        - generic [ref=e86]:
+          - generic [ref=e87]: System Persona Prompt
+          - textbox "E.g., You are a helpful and professional AI assistant." [ref=e88]: You are a helpful and professional AI assistant.
+          - generic [ref=e89]: This instruction is added to your prompts.
+      - generic [ref=e90]:
+        - generic [ref=e91]: Mode
+        - generic [ref=e92]:
+          - generic [ref=e93]:
+            - generic [ref=e94]: Fast Mode
+            - generic [ref=e95]: Prefer quicker responses.
+          - checkbox [checked] [ref=e96] [cursor=pointer]
+        - generic [ref=e97]:
+          - generic [ref=e98]:
+            - generic [ref=e99]: Voice Mode
+            - generic [ref=e100]: Prepare prompts for spoken-style interaction.
+          - checkbox [ref=e101] [cursor=pointer]
+      - generic [ref=e102]:
+        - generic [ref=e103]: Interface
+        - generic [ref=e104]:
+          - generic [ref=e105]:
+            - generic [ref=e106]: Send On Enter
+            - generic [ref=e107]: "Use `Shift + Enter` to make a new line."
+          - checkbox [checked] [ref=e108] [cursor=pointer]
+        - generic [ref=e109]:
+          - generic [ref=e110]:
+            - generic [ref=e111]: Starter Suggestions
+            - generic [ref=e112]: Show prompt suggestions in a fresh chat.
+          - checkbox [active] [ref=e113] [cursor=pointer]
+        - generic [ref=e114]:
+          - generic [ref=e115]:
+            - generic [ref=e116]: Message Details
+            - generic [ref=e117]: Show timestamps and response timing.
+          - checkbox [checked] [ref=e118] [cursor=pointer]
+    - generic [ref=e119]:
+      - button "Cancel" [ref=e120] [cursor=pointer]
+      - button "Save Changes" [ref=e121] [cursor=pointer]

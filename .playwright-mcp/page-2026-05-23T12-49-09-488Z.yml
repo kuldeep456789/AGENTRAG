@@ -1,0 +1,55 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "New chat" [ref=e5] [cursor=pointer]:
+      - img [ref=e6]
+      - text: New chat
+    - generic [ref=e7]:
+      - generic [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Enterprise RAG Ingestion
+        - button [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e16] [cursor=pointer]:
+        - generic [ref=e17]: Document Risk Analysis
+        - button [ref=e19]:
+          - img [ref=e20]
+    - generic [ref=e24]:
+      - button "Clear chat" [ref=e25] [cursor=pointer]:
+        - img [ref=e26]
+        - text: Clear chat
+      - button "Settings" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+        - text: Settings
+      - generic [ref=e32]:
+        - generic [ref=e33]: D
+        - generic [ref=e34]: demo
+        - img [ref=e35]
+  - main [ref=e38]:
+    - button [ref=e41] [cursor=pointer]:
+      - img [ref=e42]
+    - generic [ref=e43]:
+      - generic [ref=e45]:
+        - generic [ref=e46]: "!"
+        - generic [ref=e47]:
+          - generic [ref=e48]:
+            - generic [ref=e49]: System
+            - generic [ref=e50]: /06:19 PM
+          - paragraph [ref=e52]: Aether Agent fabric active. Secure connection established.
+      - generic [ref=e54]:
+        - generic [ref=e55]: AI
+        - generic [ref=e56]:
+          - generic [ref=e57]:
+            - generic [ref=e58]: RAG Agent
+            - generic [ref=e59]: /06:19 PM
+          - paragraph [ref=e61]: Hello! I am your AI assistant. How can I assist you with your knowledge workspace or vision analysis today?
+          - button "Copy" [ref=e63] [cursor=pointer]:
+            - img [ref=e64]
+            - text: Copy
+    - generic [ref=e68]:
+      - generic [ref=e69]:
+        - textbox "Message ChatGPT..." [ref=e70]
+        - generic [ref=e71]:
+          - button "Attach File" [ref=e72] [cursor=pointer]:
+            - img [ref=e73]
+          - button [disabled] [ref=e75]:
+            - img [ref=e76]
+      - generic [ref=e78]: Responses include timestamp and total answer time. Verify important information.

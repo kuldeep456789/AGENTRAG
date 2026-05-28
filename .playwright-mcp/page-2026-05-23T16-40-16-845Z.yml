@@ -1,0 +1,84 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - button "New chat" [ref=e5] [cursor=pointer]:
+      - img [ref=e6]
+      - text: New chat
+    - generic [ref=e7]:
+      - generic [ref=e8] [cursor=pointer]:
+        - generic [ref=e9]: Enterprise RAG Ingestion
+        - button "Open menu for Enterprise RAG Ingestion" [ref=e11]:
+          - img [ref=e12]
+      - generic [ref=e45] [cursor=pointer]:
+        - generic [ref=e46]: Document Risk Analysis
+        - generic [ref=e47]:
+          - button "Open menu for Document Risk Analysis" [expanded] [active] [ref=e48]:
+            - img [ref=e49]
+          - menu [ref=e140]:
+            - menuitem "Share" [ref=e141]:
+              - img [ref=e142]
+              - text: Share
+            - menuitem "Start a group chat" [ref=e145]:
+              - img [ref=e146]
+              - text: Start a group chat
+            - menuitem "Rename" [ref=e149]:
+              - img [ref=e150]
+              - text: Rename
+            - menuitem "Move to project" [ref=e152]:
+              - generic:
+                - img [ref=e153]
+                - text: Move to project
+              - img [ref=e155]
+            - menuitem "Pin chat" [ref=e158]:
+              - img [ref=e159]
+              - text: Pin chat
+            - menuitem "Archive" [ref=e161]:
+              - img [ref=e162]
+              - text: Archive
+            - menuitem "Delete" [ref=e165]:
+              - img [ref=e166]
+              - text: Delete
+    - generic [ref=e53]:
+      - button "Clear chat" [ref=e54] [cursor=pointer]:
+        - img [ref=e55]
+        - text: Clear chat
+      - button "Settings" [ref=e57] [cursor=pointer]:
+        - img [ref=e58]
+        - text: Settings
+      - generic [ref=e61]:
+        - generic [ref=e62]: D
+        - generic [ref=e63]: demo
+        - img [ref=e64]
+  - main [ref=e67]:
+    - generic [ref=e68]:
+      - button [ref=e70] [cursor=pointer]:
+        - img [ref=e71]
+      - generic [ref=e72]:
+        - generic [ref=e73]: Fast mode
+        - generic [ref=e74]: ok
+    - generic [ref=e75]:
+      - generic [ref=e77]:
+        - generic [ref=e78]: "!"
+        - generic [ref=e79]:
+          - generic [ref=e80]:
+            - generic [ref=e81]: System
+            - generic [ref=e82]: /10:09 PM
+          - paragraph [ref=e84]: Aether Agent fabric active. Secure connection established.
+      - generic [ref=e86]:
+        - generic [ref=e87]: AI
+        - generic [ref=e88]:
+          - generic [ref=e89]:
+            - generic [ref=e90]: RAG Agent
+            - generic [ref=e91]: /10:09 PM
+          - paragraph [ref=e93]: Hello! I am your AI assistant. How can I assist you with your knowledge workspace or vision analysis today?
+          - button "Copy" [ref=e95] [cursor=pointer]:
+            - img [ref=e96]
+            - text: Copy
+    - generic [ref=e100]:
+      - generic [ref=e101]:
+        - textbox "Message ChatGPT..." [ref=e102]
+        - generic [ref=e103]:
+          - button "Attach File" [ref=e104] [cursor=pointer]:
+            - img [ref=e105]
+          - button [disabled] [ref=e107]:
+            - img [ref=e108]
+      - generic [ref=e110]: Responses include timestamp and total answer time. Verify important information.

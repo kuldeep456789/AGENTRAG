@@ -1,0 +1,6 @@
+c:\Users\kulde\AppData\Local\Packages\MicrosoftWindows.Client.Core_cw5n1h2txyewy\TempState\ScreenClip\{F14C3CB9-1D18-4861-A989-EDA99CEE23C9}.pngINFO:     Will watch for changes in these directories: ['C:\\Users\\kulde\\Desktop\\AI\\backend']
+INFO:     Uvicorn running on http://127.0.0.1:8000 (Press CTRL+C to quit)
+INFO:     Started reloader process [28028] using WatchFiles
+INFO:     Started server process [23088]
+INFO:     Waiting for application startup.
+INFO:     Application startup complete.

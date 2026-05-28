@@ -1,0 +1,65 @@
+Metadata-Version: 2.4
+Name: saas-rag-agent
+Version: 0.1.0
+Summary: Multi-modal RAG API with role-aware access, multilingual support, and clean service orchestration.
+Requires-Python: >=3.11
+Description-Content-Type: text/markdown
+Requires-Dist: fastapi>=0.115.0
+Requires-Dist: uvicorn[standard]>=0.30.0
+Requires-Dist: pydantic>=2.8.0
+Requires-Dist: pydantic-settings>=2.4.0
+Requires-Dist: pyjwt>=2.9.0
+Requires-Dist: langdetect>=1.0.9
+Requires-Dist: langgraph>=0.2.14
+Requires-Dist: httpx>=0.27.0
+Requires-Dist: sqlalchemy>=2.0.36
+Requires-Dist: psycopg[binary]>=3.2.3
+
+# Backend Service
+
+FastAPI backend for the SaaS RAG agent.
+
+## Run
+
+```powershell
+cd C:\Users\kulde\Desktop\AI
+.venv\Scripts\activate
+cd backend
+copy .env.example .env
+pip install -r requirements.txt
+pip install -e .
+python app.py
+```
+
+You can also run:
+
+```powershell
+python -m uvicorn app.main:app --reload
+```
+
+Add your provider keys and PostgreSQL URL to `backend/.env`.
+
+Example variable names:
+
+- `OPENAI_API_KEY`
+- `ANTHROPIC_API_KEY`
+- `CLAUDE_API_KEY`
+- `POSTGRES_URL`
+
+## Main Files
+
+- [app.py](C:/Users/kulde/Desktop/AI/backend/app.py:1)
+- [app/main.py](C:/Users/kulde/Desktop/AI/backend/app/main.py:1)
+- [app/workflows/rag.py](C:/Users/kulde/Desktop/AI/backend/app/workflows/rag.py:1)
+- [app/services/providers.py](C:/Users/kulde/Desktop/AI/backend/app/services/providers.py:1)
+
+## Endpoints
+
+- `POST /auth/login`
+- `POST /auth/refresh`
+- `POST /query`
+- `POST /input`
+- `POST /summarize`
+- `POST /vision`
+- `GET /dashboard`
+- `GET /health`

@@ -1,0 +1,13 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - heading "Welcome back" [level=2] [ref=e6]
+    - paragraph [ref=e7]: Access the AI intelligence platform
+  - generic [ref=e8]:
+    - generic [ref=e9]:
+      - generic [ref=e10]: Email Address
+      - textbox "name@domain.com" [ref=e11]
+    - generic [ref=e12]:
+      - generic [ref=e13]: Password
+      - textbox "••••••••" [ref=e14]
+    - button "Continue" [ref=e15] [cursor=pointer]
+  - generic [ref=e16]: Don't have an account? Sign up

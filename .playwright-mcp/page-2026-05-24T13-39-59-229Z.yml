@@ -1,0 +1,114 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - button "New chat" [ref=e6] [cursor=pointer]:
+        - img [ref=e7]
+        - text: New chat
+      - button "Collapse sidebar" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Enterprise RAG Ingestion
+        - button "Open menu for Enterprise RAG Ingestion" [ref=e14]:
+          - img [ref=e15]
+      - generic [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: Document Risk Analysis
+        - button "Open menu for Document Risk Analysis" [ref=e22]:
+          - img [ref=e23]
+    - generic [ref=e27]:
+      - button "Settings" [active] [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+        - text: Settings
+      - generic [ref=e32]:
+        - generic [ref=e33]: D
+        - generic [ref=e34]: demo
+        - img [ref=e35]
+  - main [ref=e38]:
+    - generic [ref=e39]:
+      - generic [ref=e41]:
+        - generic [ref=e42]: "!"
+        - generic [ref=e43]:
+          - generic [ref=e44]:
+            - generic [ref=e45]: System
+            - generic [ref=e46]: /07:09 PM
+          - paragraph [ref=e48]: Aether Agent fabric active. Secure connection established.
+      - generic [ref=e50]:
+        - generic [ref=e51]: AI
+        - generic [ref=e52]:
+          - generic [ref=e53]:
+            - generic [ref=e54]: RAG Agent
+            - generic [ref=e55]: /07:09 PM
+          - paragraph [ref=e57]: Hello! I am your AI assistant. How can I assist you with your knowledge workspace or vision analysis today?
+          - button "Copy" [ref=e59] [cursor=pointer]:
+            - img [ref=e60]
+            - text: Copy
+    - generic [ref=e64]:
+      - generic [ref=e65]:
+        - textbox "Message ChatGPT..." [ref=e66]
+        - generic [ref=e67]:
+          - button "Attach File" [ref=e68] [cursor=pointer]:
+            - img [ref=e69]
+          - button [disabled] [ref=e71]:
+            - img [ref=e72]
+      - generic [ref=e74]: Responses include timestamp and total answer time. Verify important information.
+  - generic [ref=e76]:
+    - generic [ref=e77]:
+      - heading "Settings" [level=3] [ref=e78]
+      - button [ref=e79] [cursor=pointer]:
+        - img [ref=e80]
+    - generic [ref=e84]:
+      - generic [ref=e85]:
+        - generic [ref=e86]: Cognitive Engine
+        - generic [ref=e87]:
+          - generic [ref=e88] [cursor=pointer]:
+            - img [ref=e90]
+            - generic [ref=e92]:
+              - strong [ref=e93]: Fast inference
+              - generic [ref=e94]: Route short answers through the fastest available model.
+            - checkbox "Fast inference Route short answers through the fastest available model." [checked]
+          - generic [ref=e96] [cursor=pointer]:
+            - img [ref=e98]
+            - generic [ref=e99]:
+              - strong [ref=e100]: Source radar
+              - generic [ref=e101]: Show citations, coverage, and retrieval confidence.
+            - checkbox "Source radar Show citations, coverage, and retrieval confidence." [checked]
+          - generic [ref=e103] [cursor=pointer]:
+            - img [ref=e105]
+            - generic [ref=e106]:
+              - strong [ref=e107]: Telemetry trace
+              - generic [ref=e108]: Display timestamps, model latency, and server timing.
+            - checkbox "Telemetry trace Display timestamps, model latency, and server timing." [checked]
+          - generic [ref=e110] [cursor=pointer]:
+            - img [ref=e112]
+            - generic [ref=e115]:
+              - strong [ref=e116]: Voice capsule
+              - generic [ref=e117]: Ask for shorter spoken-style responses from the backend.
+            - checkbox "Voice capsule Ask for shorter spoken-style responses from the backend."
+      - generic [ref=e119]:
+        - generic [ref=e120]: Operator Console
+        - generic [ref=e121]:
+          - generic [ref=e122] [cursor=pointer]:
+            - img [ref=e124]
+            - generic [ref=e126]:
+              - strong [ref=e127]: Enter to send
+              - generic [ref=e128]: Submit with Enter, use Shift+Enter for a new line.
+            - checkbox "Enter to send Submit with Enter, use Shift+Enter for a new line." [checked]
+          - generic [ref=e130] [cursor=pointer]:
+            - img [ref=e132]
+            - generic [ref=e134]:
+              - strong [ref=e135]: Launch prompts
+              - generic [ref=e136]: Show starter prompts on a fresh chat screen.
+            - checkbox "Launch prompts Show starter prompts on a fresh chat screen."
+          - generic [ref=e138] [cursor=pointer]:
+            - img [ref=e140]
+            - generic [ref=e142]:
+              - strong [ref=e143]: Focus mode
+              - generic [ref=e144]: Reduce ambient chrome and keep attention on the thread.
+            - checkbox "Focus mode Reduce ambient chrome and keep attention on the thread."
+      - generic [ref=e146]:
+        - generic [ref=e147]: Persona Kernel
+        - textbox "Define how the assistant should think and answer..." [ref=e148]: You are a DSA interview coach. Explain the pattern briefly, then provide short Python code with time and space complexity.
+        - generic [ref=e149]:
+          - button "Senior Dev" [ref=e150] [cursor=pointer]
+          - button "DSA Coach" [ref=e151] [cursor=pointer]
+          - button "Architect" [ref=e152] [cursor=pointer]

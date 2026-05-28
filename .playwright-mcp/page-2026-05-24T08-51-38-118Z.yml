@@ -1,0 +1,55 @@
+- generic [ref=e3]:
+  - complementary [ref=e4]:
+    - generic [ref=e5]:
+      - button "New chat" [ref=e6] [cursor=pointer]:
+        - img [ref=e7]
+        - text: New chat
+      - button "Collapse sidebar" [ref=e8] [cursor=pointer]:
+        - img [ref=e9]
+    - generic [ref=e10]:
+      - generic [ref=e11] [cursor=pointer]:
+        - generic [ref=e12]: Enterprise RAG Ingestion
+        - button "Open menu for Enterprise RAG Ingestion" [ref=e14]:
+          - img [ref=e15]
+      - generic [ref=e19] [cursor=pointer]:
+        - generic [ref=e20]: Document Risk Analysis
+        - button "Open menu for Document Risk Analysis" [ref=e22]:
+          - img [ref=e23]
+    - generic [ref=e27]:
+      - button "Settings" [ref=e28] [cursor=pointer]:
+        - img [ref=e29]
+        - text: Settings
+      - generic [ref=e32]:
+        - generic [ref=e33]: D
+        - generic [ref=e34]: demo
+        - img [ref=e35]
+  - main [ref=e38]:
+    - button "Open sidebar" [ref=e39] [cursor=pointer]:
+      - img [ref=e40]
+    - generic [ref=e41]:
+      - generic [ref=e43]:
+        - generic [ref=e44]: "!"
+        - generic [ref=e45]:
+          - generic [ref=e46]:
+            - generic [ref=e47]: System
+            - generic [ref=e48]: /02:21 PM
+          - paragraph [ref=e50]: Aether Agent fabric active. Secure connection established.
+      - generic [ref=e52]:
+        - generic [ref=e53]: AI
+        - generic [ref=e54]:
+          - generic [ref=e55]:
+            - generic [ref=e56]: RAG Agent
+            - generic [ref=e57]: /02:21 PM
+          - paragraph [ref=e59]: Hello! I am your AI assistant. How can I assist you with your knowledge workspace or vision analysis today?
+          - button "Copy" [ref=e61] [cursor=pointer]:
+            - img [ref=e62]
+            - text: Copy
+    - generic [ref=e66]:
+      - generic [ref=e67]:
+        - textbox "Message ChatGPT..." [ref=e68]
+        - generic [ref=e69]:
+          - button "Attach File" [ref=e70] [cursor=pointer]:
+            - img [ref=e71]
+          - button [disabled] [ref=e73]:
+            - img [ref=e74]
+      - generic [ref=e76]: Responses include timestamp and total answer time. Verify important information.

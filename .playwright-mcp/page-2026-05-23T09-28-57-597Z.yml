@@ -1,0 +1,35 @@
+- generic [ref=e4]:
+  - generic [ref=e5]:
+    - generic [ref=e6]: AI workspace control plane
+    - generic [ref=e7]:
+      - generic [ref=e8]: A
+      - generic [ref=e9]:
+        - heading "Aether AI" [level=1] [ref=e10]
+        - paragraph [ref=e11]: Responsive enterprise knowledge cockpit
+    - generic [ref=e12]:
+      - heading "Calm, high-signal tooling for document reasoning, vision, and live workspace analysis." [level=2] [ref=e13]
+      - paragraph [ref=e14]: "Designed for fast operator flow: ingest files, inspect system health, and keep your AI conversations organized without losing the thread."
+    - generic [ref=e15]:
+      - generic [ref=e16]:
+        - generic [ref=e17]: Modes
+        - strong [ref=e18]: RAG + Vision
+      - generic [ref=e19]:
+        - generic [ref=e20]: Response Flow
+        - strong [ref=e21]: Fast / Voice Ready
+      - generic [ref=e22]:
+        - generic [ref=e23]: Workspace
+        - strong [ref=e24]: Role-aware sessions
+  - generic [ref=e25]:
+    - generic [ref=e26]:
+      - generic [ref=e27]: Member access
+      - heading "Welcome back" [level=2] [ref=e28]
+      - paragraph [ref=e29]: Sign in to resume your secure agent workspace and active knowledge sessions.
+    - generic [ref=e30]:
+      - generic [ref=e31]:
+        - generic [ref=e32]: Username or Email Address
+        - textbox "demo-user" [ref=e33]
+      - generic [ref=e34]:
+        - generic [ref=e35]: Password
+        - textbox "••••••••" [ref=e36]
+      - button "Sign In & Access" [ref=e37] [cursor=pointer]
+    - generic [ref=e38]: New to Aether? Create an account
