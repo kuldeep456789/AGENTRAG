@@ -14,10 +14,10 @@ def _is_coding_query(query: str) -> bool:
 BRIEF_ANSWER_RULES = (
     "\nAnswer style: BRIEF"
     "\n- Keep the whole answer under 130 words unless the user explicitly asked for more."
-    "\n- Use 3–4 short paragraphs only. No ## headings and no long bullet lists."
+    "\n- Use 3–4 short paragraphs only. MUST separate each paragraph with a blank line (double newline)."
     "\n- Open with **Key term** followed by one clear definition sentence using an em dash (—) when helpful."
     "\n- Use *italic* sparingly (1–2 words) for emphasis."
-    "\n- Include one line that starts with **Example:** and uses → to show cause and effect."
+    "\n- Include one line that starts with **Example:** and uses → to show cause and effect. Separate this line with blank lines above and below."
     "\n- End with a short closing line such as \"That's the core idea.\""
     "\n- Do NOT start with \"Here is what I found.\""
 )
@@ -25,7 +25,7 @@ BRIEF_ANSWER_RULES = (
 DETAILED_ANSWER_RULES = (
     "\nAnswer style: DETAILED"
     "\n- Teach clearly using ## section headings (e.g. ## The core idea, ## How it works, ## Main types)."
-    "\n- Use short paragraphs plus bullet lists; bold the label in each bullet (e.g. **Supervised learning** — ...)."
+    "\n- Use short paragraphs plus bullet lists; bold the label in each bullet (e.g. **Supervised learning** — ...). MUST separate paragraphs and lists with blank lines (double newline)."
     "\n- Add comparison lines when useful, e.g. Traditional programming: Data + Rules → Output"
     "\n- Cover definitions, how it works, types, examples, and real-world use cases when relevant."
     "\n- You may end with one optional line offering to go deeper on a sub-topic."
@@ -68,6 +68,10 @@ DETAILED_QUERY_PATTERNS = (
     r"\bcomprehensive\b",
     r"\bfull guide\b",
     r"\beverything about\b",
+    r"\bdifference\b",
+    r"\bvs\.?\b",
+    r"\bversus\b",
+    r"\bcompare\b",
 )
 
 
