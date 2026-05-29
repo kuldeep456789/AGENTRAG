@@ -307,11 +307,9 @@ class RAGWorkflow:
             if detected_language != "en" and self.language.is_supported(detected_language)
             else state["query"]
         )
-        # If the user has uploaded docs (resume/PDF/etc), we should use them by default.
-        # Relying on keyword triggers makes doc Q&A feel "unrelated" unless the user
-        # explicitly says "in the uploaded PDF".
-        has_user_docs = self.vector_store.has_documents_for_user(auth.user_id)
-        document_context_requested = has_user_docs or self._should_use_document_context(translated_query)
+        # Ensure we always request document context so that
+        # any globally stored web-search memory can be queried.
+        document_context_requested = True
         cache_scope = "doc" if document_context_requested else "general"
         cache_key = f"{cache_scope}:{semantic_cache_key(translated_query, 'en')}"
         cached = self.cache.get(cache_key)
@@ -410,38 +408,16 @@ class RAGWorkflow:
         context = state.get("retrieval_context", [])
         needs_web_search = False
         if not context:
-            if any(token in query for token in unstable_keywords):
-                return {
-                    **state,
-                    "answer": "Searching the web for a reliable answer...",
-                    "response_source": ResponseSource.none,
-                    "citations": [],
-                    "needs_web_search": True,
-                    "source_tag": "[Web Search]",
-                    "llm_provider": "system",
-                    "llm_model": None,
-                }
-
-            result = self.llm.general_answer_result(
-                state["translated_query"],
-                fast_mode=state["fast_mode"],
-            )
-            answer = result["answer"]
-            if is_sensitive_query(state["translated_query"]):
-                answer += (
-                    "\n\nDisclaimer: This information is general in nature and should not replace "
-                    "advice from a qualified professional."
-                )
+            # The user explicitly wants: if not in database, search web and cache it.
             return {
                 **state,
-                "answer": answer,
-                "response_source": ResponseSource.llm,
+                "answer": "Searching the web for a reliable answer...",
+                "response_source": ResponseSource.none,
                 "citations": [],
-                "needs_web_search": False,
-                "source_tag": "[LLM Knowledge]",
-                "llm_provider": result["provider"],
-                "llm_model": result["model"],
-                "answer_style": result.get("answer_style") or infer_answer_style(state["translated_query"]),
+                "needs_web_search": True,
+                "source_tag": "[Web Search]",
+                "llm_provider": "system",
+                "llm_model": None,
             }
 
         needs_web_search = any(token in query for token in unstable_keywords)
