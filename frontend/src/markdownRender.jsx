@@ -114,6 +114,11 @@ export function normalizeAnswerText(text, style = "detailed") {
   normalized = normalized.replace(/([.!?])\s+(##\s)/g, "$1\n\n$2");
   normalized = normalized.replace(/([.!?])\s+(\*\*[A-Z])/g, "$1\n\n$2");
 
+  // Fix squashed text like "Panel 1:" or "Title:" or "--- Key Takeaways:"
+  normalized = normalized.replace(/([.!"'?])\s+(Panel\s+\d+[^:]*:|Final Panel[^:]*:|Title:|---\s+Key Takeaways[^:]*:|Bubbles:|Labels:|Tagline:)/gi, "$1\n\n**$2**\n\n");
+  // Fix squashed bullet points
+  normalized = normalized.replace(/([a-z0-9.!?:"'])\s+(-\s[A-Z])/gi, "$1\n$2");
+
   return normalized.trim();
 }
 
