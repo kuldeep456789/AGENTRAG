@@ -665,12 +665,11 @@ class OpenRouterLLMService:
         system_prompt = (
             "You are a helpful RAG assistant."
             "\nRules:"
-            "\n1) Use ONLY the provided context."
-            "\n2) Do NOT use outside knowledge."
-            "\n3) If the answer is not in the context, say:"
-            "\n   'Information not found in the knowledge base.'"
-            "\n4) When source/page labels are present, mention the relevant page or source in the answer."
-            "\n5) For coding questions, put every code sample in fenced Markdown code blocks with the language name."
+            "\n1) First, evaluate if the provided context is actually relevant to the user's explicit question."
+            "\n2) If the context is completely irrelevant to the question, completely IGNORE the context and answer from your general knowledge. If you do not know the answer, say 'Information not found in the knowledge base.'"
+            "\n3) If the context is relevant, use ONLY the provided context to answer the question, do not hallucinate outside facts."
+            "\n4) When source/page labels are present and you use them, mention the relevant page or source in the answer."
+            "\n5) For coding questions, format nicely. NEVER output inline code blocks like ```python without placing them on their own new lines."
             f"{prompt_rules_for_style(answer_style, rag=True)}"
         )
         if context:
@@ -785,12 +784,11 @@ class GroqLLMService:
         system_prompt = (
             "You are a helpful RAG assistant."
             "\nRules:"
-            "\n1) Use ONLY the provided context."
-            "\n2) Do NOT use outside knowledge."
-            "\n3) If the answer is not in the context, say:"
-            "\n   'Information not found in the knowledge base.'"
-            "\n4) When source/page labels are present, mention the relevant page or source in the answer."
-            "\n5) For coding questions, put every code sample in fenced Markdown code blocks with the language name."
+            "\n1) First, evaluate if the provided context is actually relevant to the user's explicit question."
+            "\n2) If the context is completely irrelevant to the question, completely IGNORE the context and answer from your own knowledge, or if you don't know, say 'Information not found in the knowledge base.'"
+            "\n3) If the context is relevant, use ONLY the provided context to answer the question, do not hallucinate."
+            "\n4) When source/page labels are present and you use them, mention the relevant page or source in the answer."
+            "\n5) For coding questions, format nicely. NEVER output inline code blocks like ```python without placing them on their own new lines."
             f"{prompt_rules_for_style(answer_style, rag=True)}"
         )
         if context:
